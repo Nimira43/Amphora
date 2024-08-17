@@ -75,8 +75,17 @@ const TaskCalendar = () => {
             <textarea placeholder='Enter event'></textarea>
             <button className='event-popup-btn'>Submit</button>
             <button className='close-event-popup'>
-              <i className="bx bx-x"></i>
+              <i className='bx bx-x'></i>
             </button>
+          </div>
+          <div className='event-date-wrapper'>
+            <div className='event-date'>15 November, 2024</div>
+            <div className='event-time'>21:00</div>
+          </div>
+          <div className='event-text'>Prodigy concert, London</div>
+          <div className='event-buttons'>
+            <i className="bx bxs-edit-alt"></i>
+            <i className="bx bxs-message-alt-x"></i>
           </div>
         </div>
       </div>

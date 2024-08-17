@@ -3,7 +3,7 @@ import './components/TaskCalendar.css'
 
 const App = () => {
   return (
-    <div>
+    <div className='container'>
       <TaskCalendar />
     </div>
   )

@@ -21,9 +21,3 @@ html {
   --primary: #ff4500;
   --secondary: #38baed;
 }
-
-body {
-  background-color: var(--grey-md);
-  color: var(--primary);
-  padding: 10px;
-}

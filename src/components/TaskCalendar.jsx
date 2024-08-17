@@ -72,12 +72,14 @@ const TaskCalendar = () => {
               max={60}
               className='minutes'
             />
-            <textarea placeholder='Enter event'></textarea>
-            <button className='event-popup-btn'>Submit</button>
-            <button className='close-event-popup'>
-              <i className='bx bx-x'></i>
-            </button>
           </div>
+          <textarea placeholder='Enter event'></textarea>
+          <button className='event-popup-btn'>Submit</button>
+          <button className='close-event-popup'>
+            <i className='bx bx-x'></i>
+          </button>
+        </div>
+        <div className='event'>
           <div className='event-date-wrapper'>
             <div className='event-date'>15 November, 2024</div>
             <div className='event-time'>21:00</div>

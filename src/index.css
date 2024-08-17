@@ -22,7 +22,6 @@ html {
   --secondary: #38baed;
 }
 
-
 body {
   background-color: var(--grey-md);
   color: var(--primary);

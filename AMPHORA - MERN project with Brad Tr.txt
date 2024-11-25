@@ -1,0 +1,6 @@
+AMPHORA - MERN project with Brad Traversy
+
+Project				Amphora
+Cluster				Amphora
+Username			nrabone72
+Password			pkYKkqB3yXqSzQMk

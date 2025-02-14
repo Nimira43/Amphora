@@ -5,7 +5,7 @@ import { RiUserLine } from 'react-icons/ri'
 const Header = () => {
   return (
     <header>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar bg='dark' variant='dark' expand='md' collapseOnSelect>
         <Container>
           <Navbar.Brand href='/'>Amphora</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -14,7 +14,8 @@ const Header = () => {
               <Nav.Link href='/cart'>
                 <MdOutlineShoppingCart />Cart
               </Nav.Link>
-              <Nav.Link href='/login'>Login
+              <Nav.Link href='/login'>
+                <RiUserLine /> Login
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

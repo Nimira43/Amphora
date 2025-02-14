@@ -1,31 +1,17 @@
+import Header from './components/Header'
+import { Container } from 'react-bootstrap'
+
 const App = () => {
   return (
-    <div>
-      <h1>Amphora</h1>      
-    </div>
+    <>
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <h1>Welcome to Amphora</h1>
+        </Container>
+      </main> 
+    </>
   )
 }
 
 export default App
-
-
-// import { Container } from 'react-bootstrap'
-// import { Outlet } from 'react-router-dom'
-// import Header from './components/Header'
-// import Footer from './components/Footer'
-
-// const App = () => {
-//   return (
-//     <>
-//       <Header />
-//       <main className='py-3'>
-//         <Container>
-//           <Outlet />
-//         </Container>  
-//       </main>
-//       <Footer />
-//     </>
-//   )
-// }
-
-// export default App

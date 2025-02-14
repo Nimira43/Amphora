@@ -1,12 +1,13 @@
-function App() {
+const App = () => {
   return (
     <div>
-      <h1>Amphora</h1>
+      <h1>Amphora</h1>      
     </div>
   )
 }
 
 export default App
+
 
 // import { Container } from 'react-bootstrap'
 // import { Outlet } from 'react-router-dom'

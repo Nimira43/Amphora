@@ -8,3 +8,16 @@
 .logo {
   font-family: 'Satisfy', cursive;
 }
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  border: 1px solid transparent;
+}
+
+.navbar-toggler:focus .navbar-toggler-icon {
+  border: 1px solid #ff4500;
+}

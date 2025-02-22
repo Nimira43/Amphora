@@ -10,12 +10,12 @@ const Header = () => {
           <Navbar.Brand href='/' className='logo'>Amphora</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
+            <Nav className='ms-auto hamburger'>
               <Nav.Link href='/cart'>
-                <MdOutlineShoppingCart />Cart
+                <MdOutlineShoppingCart className='menu-item' />Cart
               </Nav.Link>
               <Nav.Link href='/login'>
-                <RiUserLine /> Login
+                <RiUserLine className='menu-item' /> Login
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

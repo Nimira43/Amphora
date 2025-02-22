@@ -5,8 +5,34 @@
   font-weight: 300;
 }
 
+:root {
+  --primary: #4b7bff;
+  --primary-dark: #011ea0;
+  --primary-light: #a6bdfa;
+  --dark: #111;
+  --light: #fbfcff;
+  --grey-dark: #333;
+  --grey-medium: #999;
+  --grey-light: #333;
+  --grey-light-extra: #eee;
+}
+
+body {
+  background-color: var(--light)  ;
+}
+
 .logo {
   font-family: 'Satisfy', cursive;
+  color: var(--primary-light)
+}
+
+.navbar-toggler {
+  background-color: var(--primary-dark);
+  transition: all 0.5s ease-in;
+}
+
+.navbar-toggler:hover {
+  background-color: var(--primary);
 }
 
 .navbar-toggler:focus {
@@ -15,9 +41,5 @@
 }
 
 .navbar-toggler-icon {
-  border: 1px solid transparent;
-}
-
-.navbar-toggler:focus .navbar-toggler-icon {
-  border: 1px solid #ff4500;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

@@ -9,6 +9,8 @@
   --primary: #4b7bff;
   --primary-dark: #011ea0;
   --primary-light: #a6bdfa;
+  --secondary: #ffd700;
+  --secondary-light: #f7eba6;  
   --dark: #111;
   --light: #fbfcff;
   --grey-dark: #333;
@@ -63,12 +65,12 @@ main {
 }
 
 .rating svg {
-  color: #f3c80a;
+  color: var(--secondary);
 }
 
 .rating-text {
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 400;
   padding-left: 0.5rem;
 }
 
@@ -90,9 +92,9 @@ table th {
 
 .review h2 {
   font-size: 24px;
-  background: #f4f4f4;
+  background: var(--secondary-light);
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--grey-dark);
 }
 
 .review button {
@@ -106,49 +108,4 @@ table th {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-}
-
-.btn-dk {
-  background-color: #111;
-  color: #ffd700;
-}
-
-.btn-dk:hover {
-  background-color: #555;
-  color: #ffee00;
-}
-
-.btn-dk:disabled {
-  background-color: #555;
-  color: #ffee00;
-}
-
-.btn-gd {
-  background-color: #ffd700;
-  color: #111;
-}
-
-.btn-gd:hover {
-  background-color: #ffee00;
-  color: #555;
-}
-
-.btn-gd:disabled {
-  background-color: #ffee00;
-  color: #555;
-}
-
-.btn-lg {
-  background-color: #eee;
-  color: #111;
-}
-
-.btn-lg:hover {
-  background-color: #ccc;
-  color: #555;
-}
-
-.btn-lg:disabled {
-  background-color: #ccc;
-  color: #555;
 }

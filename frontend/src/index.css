@@ -20,6 +20,94 @@
   --transition: all 0.5s ease-in;
 }
 
+.bl-tx-dk {
+  color: var(--primary-dark);
+}
+
+.bl-tx {
+  color: var(--primary);
+}
+
+.bl-tx-lg {
+  color: var(--primary-light);
+}
+
+.bl-bg-dk {
+  background-color: var(--primary-dark);
+}
+
+.bl-bg {
+  background-color: var(--primary);
+}
+
+.bl-bg-lg {
+  background-color: var(--primary-light);
+}
+
+.ye-tx {
+  color: var(--secondary);
+}
+
+.ye-tx-lg {
+  color: var(--secondary-light);
+}
+
+.ye-bg {
+  background-color: var(--secondary);
+}
+
+.ye-bg-lg {
+  background-color: var(--secondary-light);
+}
+
+.gr-tx-dk {
+  color: var(--grey-dark);
+}
+
+.gr-tx {
+  color: var(--grey-medium);
+}
+
+.gr-tx-lg {
+  color: var(--grey-light);
+}
+
+.gr-tx-lx {
+  color: var(--grey-light-extra);
+}
+
+.gr-bg-dk {
+  background-color: var(--grey-dark);
+}
+
+.gr-bg {
+  background-color: var(--grey-medium);
+}
+
+.gr-bg-lg {
+  background-color: var(--grey-light);
+}
+
+.gr-bg-lx {
+  background-color: var(--grey-light-extra);
+}
+
+.dk-tx {
+  color: var(--dark);
+}
+
+.lg-tx {
+  color: var(--light);
+}
+
+.dk-bg {
+  background-color: var(--dark);
+}
+
+.lg-bg {
+  background-color: var(--light);
+}
+
 body {
   background-color: var(--light)  ;
 }

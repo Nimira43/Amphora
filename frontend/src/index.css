@@ -6,9 +6,9 @@
 }
 
 :root {
-  --primary: #4b7bff;
-  --primary-dark: #011ea0;
-  --primary-light: #a6bdfa;
+  --primary: #ff4500;
+  --primary-dark: #b43203;
+  --primary-light: #f68e68;
   --secondary: #ffd700;
   --secondary-light: #f7eba6;  
   --dark: #111;
@@ -122,12 +122,12 @@ main {
 }
 
 .navbar-toggler {
-  background-color: var(--primary-dark);
+  background-color: var(--grey-dark);
   transition: var(--transition);
 }
 
 .navbar-toggler:hover {
-  background-color: var(--primary);
+  background-color: var(--primary-light);
 }
 
 .navbar-toggler:focus {

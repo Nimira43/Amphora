@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { LuAmphora } from 'react-icons/lu'
 import { IoSearchOutline } from 'react-icons/io5'
 import { LiaStoreAltSolid } from 'react-icons/lia'
+import { BsCart3 } from 'react-icons/bs'
 
 export default function Navigation() {
   return (
@@ -11,9 +12,9 @@ export default function Navigation() {
           <Link href='/' className='flex items-center'>
             <div className='flex items-center'>
               <div
-                className='w-9 h-9 bg-prime text-light rounded-full flex items-center justify-center text-2xl mr-2'
+                className='w-9 h-9 bg-prime text-light rounded-md flex items-center justify-center mr-2'
               >
-                <LuAmphora />
+                <LuAmphora  className='text-2xl' />
               </div>
               <span
                 className='logo text-prime text-2xl flex pt-1'
@@ -46,8 +47,14 @@ export default function Navigation() {
                 >
                   Products
                 </span>
-              </button>
+              </button>  
             </div>
+            <Link
+                href='/cart'
+                className='text-white/70 hover:text-white bg-prime flex justify-center items-center p-2 rounded-md transition-colors'
+              >
+                <BsCart3 className='text-2xl' />
+              </Link>
           </div>
         </div>
       </div>

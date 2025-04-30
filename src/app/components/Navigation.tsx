@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { LuAmphora } from 'react-icons/lu'
 import { IoSearchOutline } from 'react-icons/io5'
+import { LiaStoreAltSolid } from 'react-icons/lia'
 
 export default function Navigation() {
   return (
@@ -32,11 +33,21 @@ export default function Navigation() {
                 type='submit'
                 className='absolute right-1 top-1/2 -translate-y-1/2 text-white/40 hover:text-white p-1.5 rounded-full transition-colors cursor-pointer' 
               >
-                <IoSearchOutline
-                  className='text-xl '/>
+                <IoSearchOutline className='text-xl' />
               </button>
             </form>
-            
+          </div>
+          <div className='hidden md:flex items-center space-x-4'>
+            <div className='group'>
+              <button className='text-white/70 hover:text-white bg-prime transition-colors p-2 rounded-md flex items-center cursor-pointer'>
+                <LiaStoreAltSolid className='text-2xl mr-1' />
+                <span
+                  className='hidden md:inline text font-medium uppercase'
+                >
+                  Products
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

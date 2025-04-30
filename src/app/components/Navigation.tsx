@@ -3,6 +3,7 @@ import { LuAmphora } from 'react-icons/lu'
 import { IoSearchOutline } from 'react-icons/io5'
 import { LiaStoreAltSolid } from 'react-icons/lia'
 import { BsCart3 } from 'react-icons/bs'
+import { HiOutlineUser } from 'react-icons/hi2'
 
 export default function Navigation() {
   return (
@@ -50,11 +51,17 @@ export default function Navigation() {
               </button>  
             </div>
             <Link
-                href='/cart'
-                className='text-white/70 hover:text-white bg-prime flex justify-center items-center p-2 rounded-md transition-colors'
-              >
-                <BsCart3 className='text-2xl' />
-              </Link>
+              href='/cart'
+              className='text-white/70 hover:text-white bg-prime flex justify-center items-center p-2 rounded-md transition-colors'
+            >
+              <BsCart3 className='text-2xl' />
+            </Link>
+            <Link
+              href='/login'
+              className='text-white/70 hover:text-white bg-prime flex justify-center items-center p-2 rounded-md transition-colors'
+            >
+              <HiOutlineUser className='text-2xl' />
+            </Link>
           </div>
         </div>
       </div>

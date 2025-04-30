@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { LuAmphora } from 'react-icons/lu'
 
 export default function Navigation() {
   return (
@@ -6,7 +7,11 @@ export default function Navigation() {
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex justify-between items-center'>
           <Link href='/' className='flex items-center'>
-          
+            <div className='flex items-center'>
+              <div className='w-9 h-9 bg-prime text-light rounded-full flex items-center justify-center text-2xl mr-2'>
+                <LuAmphora />
+              </div>
+            </div>
           </Link>
         </div>
       </div>

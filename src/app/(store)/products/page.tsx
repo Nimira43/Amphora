@@ -1,5 +1,5 @@
-export default function Products() {
+export default function ProductsPage() {
   return (
-    <div>Products</div>
+    <div>Products For Sale</div>
   )
 }

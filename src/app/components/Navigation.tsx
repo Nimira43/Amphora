@@ -1,9 +1,5 @@
-const Navigation = () => {
+export default function Navigation() {
   return (
-    <div>
-      Navigation      
-    </div>
+    <div>Navigation</div>
   )
 }
-
-export default Navigation

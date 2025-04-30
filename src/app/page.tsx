@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className='min-h-screen flex flex-col'>      
       <Navigation />
-      <div className='flex-grow'>
+      <div className='flex-grow pt-24'>
         <Link
           href='/products'
           className='text-prime'

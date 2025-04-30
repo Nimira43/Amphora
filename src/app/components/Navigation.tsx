@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { LuAmphora } from 'react-icons/lu'
+import { IoSearchOutline } from 'react-icons/io5'
 
 export default function Navigation() {
   return (
@@ -21,13 +22,21 @@ export default function Navigation() {
             </div>
           </Link>
           <div className='hidden md:block flex-grow max-w-lg mx-8'>
-            <form className='group'>
+            <form className='group relative'>
               <input
                 type='text'
                 placeholder='Search...'
-                className='w-full bg-prime rounded-md  text-light placeholder:text-light:70 focus:outline-0 py-2 pl-4 pr-10'
+                className='w-full bg-prime rounded-md  text-light placeholder:text-white/40 focus:outline-0 py-2 pl-4 pr-10'
               />
+              <button
+                type='submit'
+                className='absolute right-1 top-1/2 -translate-y-1/2 text-white/40 hover:text-white p-1.5 rounded-full transition-colors cursor-pointer' 
+              >
+                <IoSearchOutline
+                  className='text-xl '/>
+              </button>
             </form>
+            
           </div>
         </div>
       </div>

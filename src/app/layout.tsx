@@ -21,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className={poppins.className}>
-      <body  className={'antialiased'}>
+      <body
+        className={
+          'antialiased min-h-screen flex flex-col m-0 p-0 '
+        }
+      >
         {children}
       </body>
     </html>

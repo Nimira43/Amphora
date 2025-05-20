@@ -11,7 +11,7 @@ export default function Footer() {
             <div className='w-full md:w-auto'>
               <form className='flex flex-col sm:flex-row gap-2'>
                 <input type='email' placeholder='Email Address' className='px-5 py-3 rounded-md bg-light text-dark border-0 outline-0 min-w-[240px]' required />
-                <button type='submit' className='bg-prime hover:bg-prime-dark'>Button</button>
+                <button type='submit' className='text-light bg-prime hover:bg-prime-dark uppercase px-6 py-3 rounded-md items-center justify-center'>Submit</button>
               </form>
             </div>
           </div>

@@ -51,7 +51,7 @@ export default function Footer() {
                 <Link
                   href='#'
                   key={name}
-                  className="social group flex items-center justify-center w-9 h-9 rounded-full bg-grey-dark hover:bg-prime text-light"
+                  className="social group flex items-center justify-center w-9 h-9 rounded-full bg-grey-light-extra hover:bg-prime text-dark hover:text-light"
                 >
                   {icon}
                 </Link>

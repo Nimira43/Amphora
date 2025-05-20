@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <div className='bg-dark py-16'>
+      <div className='bg-grey-dark py-16'>
         <div className='max-w-7xl mx-auto px-6'>
           <div className='flex flex-col md:flex-row items-center justify-between'>
             <div className='mb-8 md:mb-0 md:max-w-xl'>
@@ -16,6 +16,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className='max-w-7xl mx-auto py-16'>
+        <div className="grid grid-cols md:grid-cols-12 gap-8"></div>
       </div>
     </footer>
   )

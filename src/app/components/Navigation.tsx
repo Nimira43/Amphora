@@ -44,7 +44,7 @@ export default function Navigation() {
               <button className='text-light bg-prime hover:bg-prime-dark p-2 rounded-md flex items-center cursor-pointer'>
                 <LiaStoreAltSolid className='text-2xl mr-1' />
                 <span
-                  className='hidden md:inline text font-medium uppercase'
+                  className='hidden md:inline text uppercase'
                 >
                   Products
                 </span>

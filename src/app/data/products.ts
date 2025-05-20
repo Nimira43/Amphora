@@ -7,7 +7,6 @@ export type Product = {
   category: string
 }
 
-// New Category type definition
 export type Category = {
   name: string
   slug: string
@@ -16,7 +15,6 @@ export type Category = {
 }
 
 export const productsList: Product[] = [
-  // Smartphones
   {
     id: 'product001',
     name: 'Smartphone Pro X',
@@ -41,8 +39,6 @@ export const productsList: Product[] = [
     image: '/images/product003.png',
     category: 'smartphones',
   },
-
-  // TVs
   {
     id: 'product004',
     name: 'Ultra HD 4K TV',
@@ -67,8 +63,6 @@ export const productsList: Product[] = [
     image: '/images/product006.png',
     category: 'televisions',
   },
-
-  // Headphones
   {
     id: 'product007',
     name: 'Wireless Noise-Canceling Headphones',
@@ -93,8 +87,6 @@ export const productsList: Product[] = [
     image: '/images/product009.png',
     category: 'headphones',
   },
-
-  // Laptops
   {
     id: 'product010',
     name: 'Gaming Laptop Ultra',
@@ -119,8 +111,6 @@ export const productsList: Product[] = [
     image: '/images/product012.png',
     category: 'laptops',
   },
-
-  // Smartwatches
   {
     id: 'product013',
     name: 'Smartwatch Series 7',
@@ -145,8 +135,6 @@ export const productsList: Product[] = [
     image: '/images/product015.png',
     category: 'smartwatches',
   },
-
-  // Cameras
   {
     id: 'product016',
     name: 'Professional DSLR Camera',
@@ -171,8 +159,6 @@ export const productsList: Product[] = [
     image: '/images/product018.png',
     category: 'cameras',
   },
-
-  // Tablets
   {
     id: 'product019',
     name: 'Premium Tablet Pro',
@@ -197,8 +183,6 @@ export const productsList: Product[] = [
     image: '/images/product021.png',
     category: 'tablets',
   },
-
-  // Speakers
   {
     id: 'product022',
     name: 'Smart Home Speaker',
@@ -225,7 +209,6 @@ export const productsList: Product[] = [
   },
 ]
 
-// Add categories array
 export const categories: Category[] = [
   {
     name: 'Smartphones',

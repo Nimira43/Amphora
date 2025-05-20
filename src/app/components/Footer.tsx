@@ -1,5 +1,16 @@
 import Link from "next/link";
+import { AiOutlinePinterest } from "react-icons/ai";
+import { BsTwitterX } from "react-icons/bs";
 import { LuAmphora } from 'react-icons/lu'
+import { RxInstagramLogo } from "react-icons/rx";
+import { TfiFacebook } from "react-icons/tfi"
+
+const socialMediaIcons = [
+  { icon: <TfiFacebook />, name: "Facebook" },
+  { icon: <BsTwitterX />, name: "Twitter" },
+  { icon: <RxInstagramLogo />, name: "Instagram" },
+  { icon: <AiOutlinePinterest />, name: "Pinterest" }
+];
 
 export default function Footer() {
   return (
@@ -35,7 +46,17 @@ export default function Footer() {
             <p className='text-dark text-sm mb-6'>
               We provide a wide variety of products all in one place. 
             </p>
-            
+            <div className="flex space-x-4">
+              {socialMediaIcons.map(({ icon, name }) => (
+                <Link
+                  href='#'
+                  key={name}
+                  className="social group flex items-center justify-center w-9 h-9 rounded-full bg-grey-dark hover:bg-prime text-light"
+                >
+                  {icon}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

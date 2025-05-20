@@ -4,6 +4,8 @@
 
 @theme {
   --prime: #ff4500;
+  --prime-dark: #de3b00;
+  --prime-light: #ff5f34;
   --support: #008080;
   --support-dark: #012222;
   --support-light: #a9a9a9;

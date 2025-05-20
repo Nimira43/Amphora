@@ -13,7 +13,7 @@ export default function Navigation() {
           <Link href='/' className='flex items-center'>
             <div className='flex items-center'>
               <div
-                className='w-9 h-9 bg-prime text-light rounded-md flex items-center justify-center mr-2'
+                className='w-9 h-9 bg-prime text-light rounded-full flex items-center justify-center mr-2'
               >
                 <LuAmphora  className='text-2xl' />
               </div>

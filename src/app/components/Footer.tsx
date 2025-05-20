@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { LuAmphora } from 'react-icons/lu'
+
 export default function Footer() {
   return (
     <footer>
@@ -18,7 +21,23 @@ export default function Footer() {
         </div>
       </div>
       <div className='max-w-7xl mx-auto py-16'>
-        <div className="grid grid-cols md:grid-cols-12 gap-8"></div>
+        <div className="grid grid-cols md:grid-cols-12 gap-8">
+          <div className="col-span-2 md:col-span-4">
+            <Link
+              href='/'
+              className="flex items-center mb-6"
+            >
+              <div className='bg-prime text-light w-10 h-10 rounded-full flex items-center justify-center text-2xl mr-2'>
+                <LuAmphora />
+              </div>
+              <span className='text-2xl logo'>Amphora</span>
+            </Link>
+            <p className='text-dark text-sm mb-6'>
+              We provide a wide variety of products all in one place. 
+            </p>
+            
+          </div>
+        </div>
       </div>
     </footer>
   )

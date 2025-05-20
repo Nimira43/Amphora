@@ -7,7 +7,7 @@ import { HiOutlineUser } from 'react-icons/hi2'
 
 export default function Navigation() {
   return (
-    <nav className='fixed top-0 left-0 right-0 bg-dark shdaow-md py-4'>
+    <nav className='fixed top-0 left-0 right-0 bg-dark shadow-md py-4'>
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex justify-between items-center'>
           <Link href='/' className='flex items-center'>
@@ -18,7 +18,7 @@ export default function Navigation() {
                 <LuAmphora  className='text-2xl' />
               </div>
               <span
-                className='logo text-prime text-2xl flex pt-1'
+                className='logo text-light text-2xl flex pt-1'
               >
                 Amphora
               </span>

@@ -4,6 +4,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { LuAmphora } from 'react-icons/lu'
 import { RxInstagramLogo } from "react-icons/rx";
 import { TfiFacebook } from "react-icons/tfi"
+import { categories } from "../data/products";
 
 const socialMediaIcons = [
   { icon: <TfiFacebook />, name: "Facebook" },
@@ -60,6 +61,18 @@ export default function Footer() {
           </div>
           <div className='col-span-1 md:col-span-2'>
             <h3 className='text-dark font-medium mb-4 text-lg'>Categories</h3>
+            <ul className='space-y-2.5'>
+              {categories.slice(0, 5).map((category) => (
+                <li key={category.slug}>
+                  <Link 
+                    href='/products'
+                    className='text-dark hover:text-prime hover:translate-x-1 inline-flex items-center'
+                  >
+                    <span className='w-1.5 h-1.5 rounded bg-prime mr-2 inline-block'> </span>                    
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

@@ -14,6 +14,9 @@ const socialMediaIcons = [
 ];
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear()
+  const companyName = 'Amphora'
+
   return (
     <footer>
       <div className='bg-grey-dark py-16'>
@@ -135,7 +138,20 @@ export default function Footer() {
         <div className='max-w-7xl mx-auto p-6'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='text-dark text-sm mb-4 md:mb-0'>
-              
+              &copy; {currentYear} Amphora. All Rights Reserved.
+            </div>
+            <div className='flex items-center'>
+              <div className='hidden sm:flex items-center mr-6 space-x-3'>
+                {socialMediaIcons.map(({ icon, name }) => (
+                <Link
+                  href='#'
+                  key={name}
+                  className='social group flex items-center justify-center w-9 h-9 text-dark hover:text-prime transition-all'
+                >
+                  {icon}
+                </Link>
+              ))}
+              </div>
             </div>
           </div>
         </div>

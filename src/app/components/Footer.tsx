@@ -84,6 +84,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          <div className='col-span-1 md:col-span-2'>
+            <h3 className='text-dark font-medium'>Shop</h3>
+          </div>
         </div>
       </div>
     </footer>

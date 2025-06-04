@@ -1,16 +1,16 @@
-import Link from "next/link";
-import { AiOutlinePinterest } from "react-icons/ai";
-import { BsTwitterX } from "react-icons/bs";
+import Link from 'next/link'
+import { AiOutlinePinterest } from 'react-icons/ai'
+import { BsTwitterX, BsArrowRight } from 'react-icons/bs'
 import { LuAmphora } from 'react-icons/lu'
-import { RxInstagramLogo } from "react-icons/rx";
-import { TfiFacebook } from "react-icons/tfi"
-import { categories } from "../data/products";
+import { RxInstagramLogo } from 'react-icons/rx'
+import { TfiFacebook } from 'react-icons/tfi'
+import { categories } from '../data/products'
 
 const socialMediaIcons = [
-  { icon: <TfiFacebook />, name: "Facebook" },
-  { icon: <BsTwitterX />, name: "Twitter" },
-  { icon: <RxInstagramLogo />, name: "Instagram" },
-  { icon: <AiOutlinePinterest />, name: "Pinterest" }
+  { icon: <TfiFacebook />, name: 'Facebook' },
+  { icon: <BsTwitterX />, name: 'Twitter' },
+  { icon: <RxInstagramLogo />, name: 'Instagram' },
+  { icon: <AiOutlinePinterest />, name: 'Pinterest' }
 ];
 
 export default function Footer() {
@@ -33,11 +33,11 @@ export default function Footer() {
         </div>
       </div>
       <div className='max-w-7xl mx-auto py-16'>
-        <div className="grid grid-cols md:grid-cols-12 gap-8">
-          <div className="col-span-2 md:col-span-4">
+        <div className='grid grid-cols md:grid-cols-12 gap-8'>
+          <div className='col-span-2 md:col-span-4'>
             <Link
               href='/'
-              className="flex items-center mb-6"
+              className='flex items-center mb-6'
             >
               <div className='bg-prime text-light w-10 h-10 rounded-full flex items-center justify-center text-2xl mr-2'>
                 <LuAmphora />
@@ -47,12 +47,12 @@ export default function Footer() {
             <p className='text-dark text-sm mb-6'>
               We provide a wide variety of products all in one place. 
             </p>
-            <div className="flex space-x-4">
+            <div className='flex space-x-4'>
               {socialMediaIcons.map(({ icon, name }) => (
                 <Link
                   href='#'
                   key={name}
-                  className="social group flex items-center justify-center w-9 h-9 rounded-full bg-grey-light-extra hover:bg-prime text-dark hover:text-light"
+                  className='social group flex items-center justify-center w-9 h-9 rounded-full bg-grey-light-extra hover:bg-prime text-dark hover:text-light'
                 >
                   {icon}
                 </Link>
@@ -66,13 +66,22 @@ export default function Footer() {
                 <li key={category.slug}>
                   <Link 
                     href='/products'
-                    className='text-dark hover:text-prime hover:translate-x-1 inline-flex items-center'
+                    className='text-dark hover:text-prime hover:translate-x-1 inline-flex items-center transition-all'
                   >
                     <span className='w-1.5 h-1.5 rounded bg-prime mr-2 inline-block'></span>
                     {category.name}
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href='/products'
+                  className='text-dark hover:text-prime hover:translate-x-1 inlineflex items-center transition-all group'
+                >
+                  View All
+                  <BsArrowRight className='inline ml-1 group-hover:translate-x-1 transition-transform'/>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -99,6 +99,36 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+          <div className='col-span-1 md:col-span-2'>
+            <h3 className='text-dark mb-4 font-medium text-lg'>Support</h3>
+            <ul className='space-y-2.5'>
+              {['Contact Us', 'FAQs', 'Shipping', 'Returns', 'Track Order'].map((item) => (
+                <li key={item}>
+                  <a 
+                    href='#'
+                    className='text-dark hover:text-prime hover:translate-x-1  items-center transition-all'
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className='col-span-1 md:col-span-2'>
+            <h3 className='text-dark mb-4 font-medium text-lg'>Company</h3>
+            <ul className='space-y-2.5'>
+              {['About Us', 'Blog', 'Careers', 'Press', 'Privacy Policy'].map((item) => (
+                <li key={item}>
+                  <a 
+                    href='#'
+                    className='text-dark hover:text-prime hover:translate-x-1  items-center transition-all'
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

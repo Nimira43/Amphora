@@ -10,7 +10,7 @@ export type Product = {
 export type Category = {
   name: string
   slug: string
-  color: string
+  colour: string
   description: string
 }
 
@@ -51,7 +51,7 @@ export const productsList: Product[] = [
     id: 'product005',
     name: 'Smart OLED TV',
     price: 1599,
-    description: 'An OLED TV with perfect blacks and vibrant colors for the best experience.',
+    description: 'An OLED TV with perfect blacks and vibrant colours for the best experience.',
     image: '/images/product005.png',
     category: 'televisions',
   },
@@ -171,7 +171,7 @@ export const productsList: Product[] = [
     id: 'product020',
     name: 'Drawing Tablet',
     price: 649,
-    description: 'Specialized tablet for digital artists with pressure sensitivity.',
+    description: 'Specialised tablet for digital artists with pressure sensitivity.',
     image: '/images/product020.png',
     category: 'tablets',
   },
@@ -213,49 +213,49 @@ export const categories: Category[] = [
   {
     name: 'Smartphones',
     slug: 'smartphones',
-    color: '#d1495b',
+    colour: '#d1495b',
     description: 'Latest mobile devices with cutting-edge features',
   },
   {
     name: 'Smart TVs',
     slug: 'televisions',
-    color: '#00798c',
+    colour: '#00798c',
     description: 'High-definition displays for immersive viewing',
   },
   {
     name: 'Headphones',
     slug: 'headphones',
-    color: '#edae49',
+    colour: '#edae49',
     description: 'Premium audio gear for music enthusiasts',
   },
   {
     name: 'Laptops',
     slug: 'laptops',
-    color: '#30638e',
+    colour: '#30638e',
     description: 'Powerful computers for work and entertainment',
   },
   {
     name: 'Smart Watches',
     slug: 'smartwatches',
-    color: '#003d5b',
+    colour: '#003d5b',
     description: 'Wearable tech to track fitness and stay connected',
   },
   {
     name: 'Cameras',
     slug: 'cameras',
-    color: '#d1495b',
+    colour: '#d1495b',
     description: 'Capture memories with high-quality photography',
   },
   {
     name: 'Tablets',
     slug: 'tablets',
-    color: '#edae49',
+    colour: '#edae49',
     description: 'Versatile devices for work and entertainment',
   },
   {
     name: 'Speakers',
     slug: 'speakers',
-    color: '#00798c',
+    colour: '#00798c',
     description: 'Premium sound systems for your home',
   },
 ]

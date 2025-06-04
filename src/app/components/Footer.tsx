@@ -68,7 +68,8 @@ export default function Footer() {
                     href='/products'
                     className='text-dark hover:text-prime hover:translate-x-1 inline-flex items-center'
                   >
-                    <span className='w-1.5 h-1.5 rounded bg-prime mr-2 inline-block'> </span>                    
+                    <span className='w-1.5 h-1.5 rounded bg-prime mr-2 inline-block'></span>
+                    {category.name}
                   </Link>
                 </li>
               ))}

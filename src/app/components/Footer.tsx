@@ -131,6 +131,15 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className='border-t border-grey-medium'>
+        <div className='max-w-7xl mx-auto p-6'>
+          <div className='flex flex-col md:flex-row justify-between items-center'>
+            <div className='text-dark text-sm mb-4 md:mb-0'>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   )
 }

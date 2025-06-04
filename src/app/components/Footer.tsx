@@ -152,6 +152,28 @@ export default function Footer() {
                 </Link>
               ))}
               </div>
+              <div className='flex space-x-4 items-center'>
+                <a 
+                  href='#'
+                  className='text-sm text-dark hover:text-prime transition-all'
+                >
+                  Terms
+                </a>
+                <span className='w-1 h-1 rounded-full bg-prime'></span>
+                <a 
+                  href='#'
+                  className='text-sm text-dark hover:text-prime transition-all'
+                >
+                  Privacy
+                </a>
+                <span className='w-1 h-1 rounded-full bg-prime'></span>
+                <a 
+                  href='#'
+                  className='text-sm text-dark hover:text-prime transition-all'
+                >
+                  Cookies
+                </a>
+              </div>
             </div>
           </div>
         </div>

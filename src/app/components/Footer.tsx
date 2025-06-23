@@ -138,7 +138,7 @@ export default function Footer() {
         <div className='max-w-7xl mx-auto p-6'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='text-dark text-sm mb-4 md:mb-0'>
-              &copy; {currentYear} Amphora. All Rights Reserved.
+              &copy; {currentYear} {companyName}. All Rights Reserved.
             </div>
             <div className='flex items-center'>
               <div className='hidden sm:flex items-center mr-6 space-x-3'>

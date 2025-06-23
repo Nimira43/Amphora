@@ -18,7 +18,9 @@ module.exports = {
         'grey-dark': '#333',
         'grey-medium': '#999',
         'grey-light': '#ccc',
-        'grey-light-extra': '#eee'
+        'grey-light-extra': '#eee',
+        'hero-grey-1': '#323232',
+        'hero-grey-2': '#343434' 
       }
     },
   },

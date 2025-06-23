@@ -1,5 +1,6 @@
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
+import Link from 'next/link'
 
 export default function HomePage() {
   return (
@@ -17,6 +18,14 @@ export default function HomePage() {
               </div>
             </h1>
             <p className='text-xl text-light/80 max-w-lg mb-10'>Explore cutting-edge tech, curated for everyday brilliance, delivered with style and ease.</p>
+            <div className='flex flex-col sm:flex-row gap-4 justify-center md:justify-start'>
+              <Link
+                href='/products'
+                className='px-8 py-3 bg-prime text-light rounded-md hover:bg-prime-dark flex items-center justify-center uppercase'
+              >
+                Shop Now
+              </Link>
+            </div>
             </div>
           </div>
         </div>

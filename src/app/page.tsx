@@ -6,9 +6,9 @@ export default function HomePage() {
     <div className='min-h-screen flex flex-col'>      
       <Navigation />
       <div 
-        className='relative h-[80vh] mb-16-overflow-hidden bg-gradient-to-r from-hero-grey-2 to-hero-grey-1'
+        className='relative h-[80vh] mb-16 overflow-hidden bg-gradient-to-r from-hero-grey-2 to-hero-grey-1'
       >
-        <div className='max-w-7xl mx-auto px-4 pt-24 h-fullflex flex-col'>
+        <div className='max-w-7xl mx-auto px-4 pt-24 h-full flex flex-col'>
           <div className='flex-grow flex flex-col md:flex-row items-center justify-center md:justify-between'>
             <div className='w-1/2 text-center md:text-left mb-10 md:mb-0 z-10'>
             <h1 className='text-4xl sm:text-5xl md:text-7xl font-medium text-light'>

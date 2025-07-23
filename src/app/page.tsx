@@ -12,21 +12,22 @@ export default function HomePage() {
         <div className='max-w-7xl mx-auto px-4 pt-24 h-full flex flex-col'>
           <div className='flex-grow flex flex-col md:flex-row items-center justify-center md:justify-between'>
             <div className='w-1/2 text-center md:text-left mb-10 md:mb-0 z-10'>
-            <h1 className='text-4xl sm:text-5xl md:text-7xl font-medium text-light'>
-              <div className='mb-2'>
-                Indulge in Innovation.
+              <h1 className='text-4xl sm:text-5xl md:text-7xl font-medium text-light'>
+                <div className='mb-2'>
+                  Indulge in Innovation.
+                </div>
+              </h1>
+              <p className='text-xl text-light/80 max-w-lg mb-10'>Explore cutting-edge tech, curated for everyday brilliance, delivered with style and ease.</p>
+              <div className='flex flex-col sm:flex-row gap-4 justify-center md:justify-start'>
+                <Link
+                  href='/products'
+                  className='px-8 py-3 bg-prime text-light rounded-md hover:bg-prime-dark flex items-center justify-center uppercase'
+                >
+                  Shop Now
+                </Link>
               </div>
-            </h1>
-            <p className='text-xl text-light/80 max-w-lg mb-10'>Explore cutting-edge tech, curated for everyday brilliance, delivered with style and ease.</p>
-            <div className='flex flex-col sm:flex-row gap-4 justify-center md:justify-start'>
-              <Link
-                href='/products'
-                className='px-8 py-3 bg-prime text-light rounded-md hover:bg-prime-dark flex items-center justify-center uppercase'
-              >
-                Shop Now
-              </Link>
             </div>
-            </div>
+            <div className='w-1/2 relative z-10 flex justify-center md:justify-end'></div>
           </div>
         </div>
       </div>

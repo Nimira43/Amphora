@@ -27,7 +27,11 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className='w-1/2 relative z-10 flex justify-center md:justify-end'></div>
+            <div className='w-1/2 relative z-10 flex justify-center md:justify-end'>
+              <Link href='/products' className='relative group cursor-pointer'>
+                
+              </Link>
+            </div>
           </div>
         </div>
       </div>

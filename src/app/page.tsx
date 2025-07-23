@@ -29,7 +29,9 @@ export default function HomePage() {
             </div>
             <div className='w-1/2 relative z-10 flex justify-center md:justify-end'>
               <Link href='/products' className='relative group cursor-pointer'>
+                <div className='absolute -inset-4 rounded-full bg-white/10 backdrop-blur-sm animate-pulse group-hover:bg-white/20 transition-colors'>
                 
+                </div>
               </Link>
             </div>
           </div>

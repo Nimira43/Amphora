@@ -31,7 +31,7 @@ export default function HomePage() {
             <div className='w-1/2 relative z-10 flex justify-center md:justify-end'>
               <Link href='/products' className='relative group cursor-pointer'>
                 <div className='absolute -inset-4 rounded-full bg-white/10 backdrop-blur-sm animate-pulse group-hover:bg-white/20 transition-colors'></div>
-                <div className='bg-white/5 backdrop-blur-md p-8 rounded-2xl shadow-2xl transform rotate-0 group-hover:rotate-3 transition-transform duration-500'>
+                <div className='bg-white/5 backdrop-blur-md p-8 rounded-2xl shadow-2xl transform rotate-3 group-hover:rotate-0 transition-transform duration-500'>
                   <Image 
                     src='/images/product024.png'
                     alt='Feature Product' 

@@ -39,6 +39,9 @@ export default function HomePage() {
                     height={400} 
                     className='rounded-lg drop-shadow-2xl object-contain'
                   />
+                  <div className='absolute -bottom-4 -right-4 bg-prime text-light px-4 py-2 rounded-md shadow-lg text-sm font-medium uppercase'>
+                    New
+                  </div>
                 </div>
               </Link>
             </div>

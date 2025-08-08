@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ProductsPage() {
+  const getCategoryImage = (categorySlug: string): string => {}
+  
   return (
     <div
       className='max-w-7xl mx-auto px-4 pt-24 mb-16'
@@ -16,7 +18,9 @@ export default function ProductsPage() {
             style={{borderColor: category.colour}}
           >
             <div className='h-48 relative overflow-hidden bg-grey-light-extra'>
-              <Image />
+              <Image 
+                src={}
+              />
             </div>
           </Link>
         ))}

@@ -1,4 +1,5 @@
 import { categories, productsList } from '@/app/data/products'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ProductsPage() {
@@ -11,10 +12,12 @@ export default function ProductsPage() {
           <Link 
             href='/products'
             key={category.slug}
-            className='group bg-grey-light-extra rounded-md overflow-hidden shadow-md hover-shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-all'
+            className='group bg-light rounded-md overflow-hidden shadow-md hover-shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-all'
             style={{borderColor: category.colour}}
           >
-            Product Categories
+            <div className='h-48 relative overflow-hidden bg-grey-light-extra'>
+              <Image />
+            </div>
           </Link>
         ))}
       </div>

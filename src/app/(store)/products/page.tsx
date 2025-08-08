@@ -11,8 +11,10 @@ export default function ProductsPage() {
           <Link 
             href='/products'
             key={category.slug}
+            className='group bg-grey-light-extra rounded-md overflow-hidden shadow-md hover-shadow-lg hover:translate-y-[-5px] bborder-b-4 relative transition-all'
+            style={{borderColor: category.slug}}
           >
-
+            Product Categories
           </Link>
         ))}
       </div>

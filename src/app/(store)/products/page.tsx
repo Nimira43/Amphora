@@ -3,7 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ProductsPage() {
-  const getCategoryImage = (categorySlug: string): string => {}
+  const getCategoryImage = (categorySlug: string): string => {
+    const categoryProduct = productsList.find(product => product.category === categorySlug)
+    return categoryProduct?.image || '/images/placeholder.png'
+  }
   
   return (
     <div

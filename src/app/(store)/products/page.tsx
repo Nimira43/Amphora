@@ -22,7 +22,10 @@ export default function ProductsPage() {
           >
             <div className='h-48 relative overflow-hidden bg-grey-light-extra'>
               <Image 
-                src={}
+                src={getCategoryImage(category.slug)}
+                alt={category.name}
+                fill
+                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw'
               />
             </div>
           </Link>

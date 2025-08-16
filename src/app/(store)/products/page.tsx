@@ -29,6 +29,14 @@ export default function ProductsPage() {
                 className='object-contain p-4 group-hover:scale-105 transistion-transform duration-500 ease-in-out'
               />
             </div>
+            <div className='p-6'>
+              <h3 
+                className='text-xl font-medium-mb-2 text-dark group-hover:text-prime transition-colors'
+                style={{color: category.colour}}
+              >
+                {category.name}
+              </h3>
+            </div>
           </Link>
         ))}
       </div>

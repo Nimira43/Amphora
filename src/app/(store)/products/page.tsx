@@ -2,6 +2,7 @@ import { categories, productsList } from '@/app/data/products'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsChevronRight } from 'react-icons/bs'
+import { HiOutlineHome } from 'react-icons/hi2'
 
 export default function ProductsPage() {
   const getCategoryImage = (categorySlug: string): string => {
@@ -51,6 +52,15 @@ export default function ProductsPage() {
             </div>
           </Link>
         ))}
+      </div>
+      <div className='mt-12 pt-6 border-t border-grey-light-extra'>
+        <Link
+          href='/'
+          className='inline-flex items-center text-dark hover:text-prime transition-colors'
+        >
+          <HiOutlineHome className='mr-2' />
+          Back to Home
+        </Link>
       </div>
     </div>
   )

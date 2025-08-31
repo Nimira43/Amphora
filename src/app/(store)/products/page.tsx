@@ -1,6 +1,7 @@
 import { categories, productsList } from '@/app/data/products'
 import Image from 'next/image'
 import Link from 'next/link'
+import { BsChevronRight } from 'react-icons/bs'
 
 export default function ProductsPage() {
   const getCategoryImage = (categorySlug: string): string => {
@@ -28,6 +29,7 @@ export default function ProductsPage() {
                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw'
                 className='object-contain p-4 group-hover:scale-105 transistion-transform duration-500 ease-in-out'
               />
+              <div className='absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-light to-transparent'></div>
             </div>
             <div className='p-6'>
               <h3 
@@ -37,6 +39,15 @@ export default function ProductsPage() {
                 {category.name}
               </h3>
               <p className='text-sm text-grey-dark'>{category.description}</p>
+              <div 
+                className='flex justify-end items-center mt-5 text-sm font-medium transition-color uppercase' 
+                style={{color: category.colour}}
+              >
+                View Products
+                <BsChevronRight
+                  className='text-xl transform group-hover:translate-x-1 transition-transform'
+                />
+              </div>
             </div>
           </Link>
         ))}

@@ -36,6 +36,7 @@ export default function ProductsPage() {
               >
                 {category.name}
               </h3>
+              <p className='text-sm text-grey-dark'>{category.description}</p>
             </div>
           </Link>
         ))}

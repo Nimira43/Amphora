@@ -5,7 +5,8 @@ export default function CategoryPage({
 }: {
   params: { category: string }
 }) {
-
+  const categorySlug = params.category.toLowerCase()
+  const categoryInfo = categories.find((cat) => cat.slug === categorySlug)
 
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>

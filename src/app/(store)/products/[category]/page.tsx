@@ -9,7 +9,12 @@ export default function CategoryPage({
 
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
-      <div className='bg-dark rounded-2xl p-8 mb-12 text-prime relative overflow hidden'></div>
+      <div className='bg-dark rounded-2xl p-8 mb-12 text-prime relative overflow hidden'>
+        <div className='relative z-10'>
+          <h1 className='text-4xl font-medium mb-3'>Laptops</h1>
+          <p className='text-lg text-light max-w-2xl'>Explore our selection of top of the range laptops.</p>
+        </div>
+      </div>
     </div>
   )
 }

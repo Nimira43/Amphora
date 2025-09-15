@@ -1,13 +1,15 @@
 import { Product, productsList, categories } from '@/app/data/products'
 
-export default function CategoryPage({
+export default async function CategoryPage({
   params
 }: {
-  params: { category: string }
+  params: Promise<{ category: string }>
 }) {
-  const categorySlug = params.category.toLowerCase()
+  const resolvedParams = await params
+  const categorySlug = resolvedParams.category.toLowerCase()
   const categoryInfo = categories.find((cat) => cat.slug === categorySlug)
-
+  const categoryName = categoryInfo?.name || resolvedParams.category
+  
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
       <div className='bg-grey-dark rounded-2xl p-8 mb-12 text-light relative overflow-hidden'>

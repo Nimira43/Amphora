@@ -69,7 +69,7 @@ export default function Footer() {
                 <li key={category.slug}>
                   <Link 
                     href='/products'
-                    className='text-dark hover:text-prime hover:translate-x-1 inline-flex items-center transition-all'
+                    className='text-dark hover:text-prime hover:translate-x-1 inline-flex items-center'
                   >
                     <span className='w-1.5 h-1.5 rounded bg-prime mr-2 inline-block'></span>
                     {category.name}
@@ -79,7 +79,7 @@ export default function Footer() {
               <li>
                 <Link
                   href='/products'
-                  className='text-dark hover:text-prime hover:translate-x-1 inlineflex items-center transition-all group'
+                  className='text-dark hover:text-prime hover:translate-x-1 inlineflex items-center group'
                 >
                   View All
                   <BsArrowRight className='inline ml-1 group-hover:translate-x-1 transition-transform'/>
@@ -94,7 +94,7 @@ export default function Footer() {
                 <li key={item}>
                   <a 
                     href='#'
-                    className='text-dark hover:text-prime hover:translate-x-1  items-center transition-all'
+                    className='text-dark hover:text-prime hover:translate-x-1  items-center'
                   >
                     {item}
                   </a>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <li key={item}>
                   <a 
                     href='#'
-                    className='text-dark hover:text-prime hover:translate-x-1  items-center transition-all'
+                    className='text-dark hover:text-prime hover:translate-x-1  items-center'
                   >
                     {item}
                   </a>
@@ -124,7 +124,7 @@ export default function Footer() {
                 <li key={item}>
                   <a 
                     href='#'
-                    className='text-dark hover:text-prime hover:translate-x-1  items-center transition-all'
+                    className='text-dark hover:text-prime hover:translate-x-1  items-center'
                   >
                     {item}
                   </a>
@@ -146,7 +146,7 @@ export default function Footer() {
                 <Link
                   href='#'
                   key={name}
-                  className='social group flex items-center justify-center w-9 h-9 text-dark hover:text-prime transition-all'
+                  className='social group flex items-center justify-center w-9 h-9 text-dark hover:text-prime'
                 >
                   {icon}
                 </Link>
@@ -155,21 +155,21 @@ export default function Footer() {
               <div className='flex space-x-4 items-center'>
                 <a 
                   href='#'
-                  className='text-sm text-dark hover:text-prime transition-all'
+                  className='text-sm text-dark hover:text-prime'
                 >
                   Terms
                 </a>
                 <span className='w-1 h-1 rounded-full bg-prime'></span>
                 <a 
                   href='#'
-                  className='text-sm text-dark hover:text-prime transition-all'
+                  className='text-sm text-dark hover:text-prime'
                 >
                   Privacy
                 </a>
                 <span className='w-1 h-1 rounded-full bg-prime'></span>
                 <a 
                   href='#'
-                  className='text-sm text-dark hover:text-prime transition-all'
+                  className='text-sm text-dark hover:text-prime'
                 >
                   Cookies
                 </a>

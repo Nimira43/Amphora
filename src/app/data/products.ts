@@ -237,13 +237,13 @@ export const categories: Category[] = [
   {
     name: 'Smart Watches',
     slug: 'smartwatches',
-    colour: 'ff0000',
+    colour: '#ff0000',
     description: 'Wearable tech to track fitness and stay connected',
   },
   {
     name: 'Cameras',
     slug: 'cameras',
-    colour: 'a52a2a',
+    colour: '#a52a2a',
     description: 'Capture memories with high-quality photography',
   },
   {

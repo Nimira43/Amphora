@@ -5,9 +5,11 @@ export default function CategoryPage({
 }: {
   params: { category: string }
 }) {
-  
+
 
   return (
-    <div>Category Page</div>
+    <div className='max-w-7xl mx-auto px-4 py-12'>
+      <div className='bg-dark rounded-2xl p-8 mb-12 text-prime relative overflow hidden'></div>
+    </div>
   )
 }

@@ -8,6 +8,8 @@
   font-family: 'Great Vibes', cursive;
 }
 
-button, a, .social {
+button, a, 
+.social, 
+.transition-effect {
   transition: all 0.5s ease-in-out;
 }

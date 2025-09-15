@@ -19,7 +19,7 @@ export default function ProductsPage() {
           <Link 
             href='/products'
             key={category.slug}
-            className='group bg-light rounded-md overflow-hidden shadow-md hover-shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-all'
+            className='group bg-light rounded-md overflow-hidden shadow-md hover-shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-effect'
             style={{borderColor: category.colour}}
           >
             <div className='h-48 relative overflow-hidden bg-grey-light-extra'>
@@ -34,14 +34,14 @@ export default function ProductsPage() {
             </div>
             <div className='p-6'>
               <h3 
-                className='text-xl font-medium-mb-2 text-dark group-hover:text-prime transition-colors'
+                className='text-xl font-medium mb-2'
                 style={{color: category.colour}}
               >
                 {category.name}
               </h3>
               <p className='text-sm text-grey-dark'>{category.description}</p>
               <div 
-                className='flex justify-end items-center mt-5 text-sm font-medium transition-color uppercase' 
+                className='flex justify-end items-center mt-5 text-sm font-medium transition-effect uppercase' 
                 style={{color: category.colour}}
               >
                 View Products
@@ -56,7 +56,7 @@ export default function ProductsPage() {
       <div className='mt-12 pt-6 border-t border-grey-light-extra'>
         <Link
           href='/'
-          className='inline-flex items-center text-dark hover:text-prime transition-colors'
+          className='inline-flex items-center text-dark hover:text-prime transition-effect'
         >
           <HiOutlineHome className='mr-2' />
           Back to Home

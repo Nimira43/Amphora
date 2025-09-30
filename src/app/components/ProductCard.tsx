@@ -19,6 +19,9 @@ export default function ProductCard() {
         <p className='text-sm text-grey-dark mb-4 line-clamp-2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, minima.
         </p>
+        <div className='flex items-center justify-between'>
+          <span className='text-xl font-medium text-prime'>£1,099</span>
+        </div>
       </div> 
     </div>
   )

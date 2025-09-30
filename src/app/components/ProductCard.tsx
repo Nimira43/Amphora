@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { BsCart3 } from 'react-icons/bs'
 
 export default function ProductCard() {
   return (
@@ -29,7 +30,9 @@ export default function ProductCard() {
             >
               View Product
             </Link>
-            <button className='w-10 h-10 bg-prime rounded-md text-light flex items-center'></button>
+            <button className='w-10 h-10 bg-prime rounded-md text-light flex items-center justify-center'>
+              <BsCart3 className='text-2xl' />
+            </button>
           </div>
         </div>
       </div> 

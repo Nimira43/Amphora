@@ -13,7 +13,10 @@ export default function ProductCard() {
         />
       </div>
       <div className='p-6 border-t border-grey-light'>
-        <h2 ></h2>
+        <h2 className='text-lg font-medium text-grey-dark mb-2 line-clamp-1'>
+          Smartone NT100
+        </h2>
+        <p></p>
       </div> 
     </div>
   )

@@ -18,6 +18,7 @@ export default async function CategoryPage({
           <p className='text-lg text-light font-light max-w-2xl'>Explore our selection of top of the range {categoryName}.</p>
         </div>
       </div>
+      <div className='grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8'></div>
     </div>
   )
 }

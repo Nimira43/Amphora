@@ -13,10 +13,12 @@ export default function ProductCard() {
         />
       </div>
       <div className='p-6 border-t border-grey-light'>
-        <h2 className='text-lg font-medium text-grey-dark mb-2 line-clamp-1'>
+        <h2 className='text-lg font-medium text-dark mb-2 line-clamp-1'>
           Smartone NT100
         </h2>
-        <p></p>
+        <p className='text-sm text-grey-dark mb-4 line-clamp-2'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, minima.
+        </p>
       </div> 
     </div>
   )

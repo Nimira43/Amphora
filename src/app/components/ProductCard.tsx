@@ -9,8 +9,12 @@ export default function ProductCard() {
           alt='Product Image'
           width={200}
           height={200}
+          className='max-h-full object-contain h-full w-auto group-hover:scale-105 transition-transform duration-500'
         />
       </div>
+      <div className='p-6 border-t border-grey-light'>
+        <h2 ></h2>
+      </div> 
     </div>
   )
 }

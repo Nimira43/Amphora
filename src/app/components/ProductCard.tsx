@@ -29,6 +29,7 @@ export default function ProductCard() {
             >
               View Product
             </Link>
+            <button className='w-10 h-10 bg-prime rounded-md text-light flex items-center'></button>
           </div>
         </div>
       </div> 

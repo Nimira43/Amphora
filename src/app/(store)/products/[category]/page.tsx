@@ -24,15 +24,15 @@ export default async function CategoryPage({
         <div>
           Product Card
         </div>
-        <div className='mt-12 pt-6 border-t border-grey-light-extra'>
-          <Link
-            href='/'
-            className='inline-flex items-center text-dark hover:text-prime transition-effect'
-          >
-            <MdOutlineCategory className='mr-2' />
-            Back to Categories
-          </Link>
-        </div>
+      </div>
+      <div className='mt-12 pt-6 border-t border-grey-light-extra'>
+        <Link
+          href='/products'
+          className='inline-flex items-center text-dark hover:text-prime transition-effect'
+        >
+          <MdOutlineCategory className='mr-2' />
+          Back to Categories
+        </Link>
       </div>
     </div>
   )

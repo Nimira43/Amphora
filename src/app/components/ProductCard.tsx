@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function ProductCard() {
   return (
@@ -21,6 +22,14 @@ export default function ProductCard() {
         </p>
         <div className='flex items-center justify-between'>
           <span className='text-xl font-medium text-prime'>£1,099</span>
+          <div className='flex gap-2'>
+            <Link 
+              href='/products/smartphones'
+              className='bg-prime px-4 py-2 flex justify-center items-center rounded-md text-light text-sm uppercase font-medium'
+            >
+              View Product
+            </Link>
+          </div>
         </div>
       </div> 
     </div>

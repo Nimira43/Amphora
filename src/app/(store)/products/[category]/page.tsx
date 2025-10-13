@@ -27,6 +27,9 @@ export default async function CategoryPage({
         {categoryProducts.map((product) => (
           <ProductCard 
             key={product.id}
+            product={product}
+            categorySlug={categorySlug}
+            categoryColour={categoryColour}
           />
         ))}
       </div>

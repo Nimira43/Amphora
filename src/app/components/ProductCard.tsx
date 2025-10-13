@@ -9,7 +9,11 @@ interface ProductCardProps {
   categoryColour: string
 }
 
-export default function ProductCard() {
+export default function ProductCard({
+  product,
+  categorySlug,
+  categoryColour
+}: ProductCardProps) {
   return (
     <div className='bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-effect group'>
       <div className='h-64 relative bg-grey-light-extra p-6 flex items-center justify-center'>

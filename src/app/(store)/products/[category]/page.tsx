@@ -10,6 +10,7 @@ export default async function CategoryPage({
 }) {
   const resolvedParams = await params
   const categorySlug = resolvedParams.category.toLowerCase()
+  const categoryProducts: Product[] = productsList.filter((product) => product.category.toLowerCase() === categorySlug)
   const categoryInfo = categories.find((cat) => cat.slug === categorySlug)
   const categoryName = categoryInfo?.name || resolvedParams.category
   

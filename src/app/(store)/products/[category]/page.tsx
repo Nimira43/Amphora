@@ -13,6 +13,7 @@ export default async function CategoryPage({
   const categoryProducts: Product[] = productsList.filter((product) => product.category.toLowerCase() === categorySlug)
   const categoryInfo = categories.find((cat) => cat.slug === categorySlug)
   const categoryName = categoryInfo?.name || resolvedParams.category
+  const categoryColour = categoryInfo?.colour || '#ff0000'
   
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>

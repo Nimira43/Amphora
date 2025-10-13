@@ -23,7 +23,11 @@ export default async function CategoryPage({
         </div>
       </div>
       <div className='grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8'>
-        <ProductCard />
+        {categoryProducts.map((product) => (
+          <ProductCard 
+            key={product.id}
+          />
+        ))}
       </div>
       <div className='mt-12 pt-6 border-t border-grey-light-extra'>
         <Link

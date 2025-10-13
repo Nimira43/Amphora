@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsCart3 } from 'react-icons/bs'
+import { Product } from '../data/products'
+
+interface ProductCardProps {
+  product: Product
+  categorySlug: string
+  categoryColour: string
+}
 
 export default function ProductCard() {
   return (

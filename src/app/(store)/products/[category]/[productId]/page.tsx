@@ -16,6 +16,9 @@ export default function ProductPage() {
             />
           </div>
         </div>
+        <div className='md:w-1/2 p-8 md:p-12 space-y-6'>
+          
+        </div>
       </div>
     </div>
   )

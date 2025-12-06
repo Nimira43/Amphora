@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { HiOutlineMinusSmall, HiOutlinePlusSmall } from 'react-icons/hi2'
 
 export default function ProductPage() {
   return (
@@ -25,8 +26,13 @@ export default function ProductPage() {
           <div className='pt-6 border-t border-grey-medium'>
             <div className='mb-6'>
               <label className='block text-dark font-medium mb-2'>Quantity</label>
-              <div>
-                
+              <div className='flex items-center'>
+                <button className='size-10 text-dark bg-transparent border border-grey-medium hover:border-dark flex justify-center items-center p-2 rounded-md'>
+                  <HiOutlineMinusSmall />
+                </button>
+                <button className='size-10 text-dark bg-transparent border border-grey-medium hover:border-dark flex justify-center items-center p-2 rounded-md'>
+                  <HiOutlinePlusSmall />
+                </button>
               </div>
             </div>
           </div>

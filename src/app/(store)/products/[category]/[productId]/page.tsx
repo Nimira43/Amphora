@@ -30,6 +30,12 @@ export default function ProductPage() {
                 <button className='size-10 text-dark bg-transparent border border-grey-medium hover:border-dark flex justify-center items-center p-2 rounded-md'>
                   <HiOutlineMinusSmall />
                 </button>
+                <input
+                  type='text'
+                  value='1'
+                  readOnly
+                  className='w-14 h-10 border border-grey-medium hover:border-dark font-medium text-center rounded-md transition-effect outline-none'
+                />
                 <button className='size-10 text-dark bg-transparent border border-grey-medium hover:border-dark flex justify-center items-center p-2 rounded-md'>
                   <HiOutlinePlusSmall />
                 </button>

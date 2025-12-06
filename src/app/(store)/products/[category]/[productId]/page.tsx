@@ -17,9 +17,19 @@ export default function ProductPage() {
           </div>
         </div>
         <div className='md:w-1/2 p-8 md:p-12 space-y-6'>
-          <h1 className='text-3xl font-medium text-dark mb-2'>Product Title</h1>
-          <p className='text-xl mb-4 text-prime'>£999</p>
-          <p className='text-grey-dark'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos et reprehenderit placeat.</p>
+          <div>
+            <h1 className='text-3xl font-medium text-dark mb-2'>Product Title</h1>
+            <p className='text-xl mb-4 text-prime'>£999</p>
+            <p className='text-grey-dark'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos et reprehenderit placeat.</p>
+          </div>
+          <div className='pt-6 border-t border-grey-medium'>
+            <div className='mb-6'>
+              <label className='block text-dark font-medium mb-2'>Quantity</label>
+              <div>
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -20,6 +20,10 @@ module.exports = {
         'grey-medium': '#999',
         'grey-light': '#ccc',
         'grey-light-extra': '#eee',
+        'grey-1': '#333',
+        'grey-2': '#999',
+        'grey-3': '#ccc',
+        'grey-4': '#eee',
         'hero-grey-1': '#232323',
         'hero-grey-2': '#434343' 
       }

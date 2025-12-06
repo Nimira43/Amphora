@@ -27,16 +27,16 @@ export default function ProductPage() {
             <div className='mb-6'>
               <label className='block text-dark font-medium mb-2'>Quantity</label>
               <div className='flex items-center'>
-                <button className='size-10 text-dark bg-transparent border border-grey-medium hover:border-dark flex justify-center items-center p-2 rounded-md'>
+                <button className='size-10 text-dark bg-transparent border border-grey-medium hover:bg-grey-light-extra flex justify-center items-center p-2 rounded-l-md'>
                   <HiOutlineMinusSmall />
                 </button>
                 <input
                   type='text'
                   value='1'
                   readOnly
-                  className='w-14 h-10 border border-grey-medium hover:border-dark font-medium text-center rounded-md transition-effect outline-none'
+                  className='w-14 h-10 border-t border-b border-grey-medium font-medium text-center transition-effect outline-none'
                 />
-                <button className='size-10 text-dark bg-transparent border border-grey-medium hover:border-dark flex justify-center items-center p-2 rounded-md'>
+                <button className='size-10 text-dark bg-transparent border border-grey-medium hover:bg-grey-light-extra flex justify-center items-center p-2 rounded-r-md'>
                   <HiOutlinePlusSmall />
                 </button>
               </div>

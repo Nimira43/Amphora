@@ -36,11 +36,11 @@ export default function Footer() {
         </div>
       </div>
       <div className='max-w-7xl mx-auto py-16 p-5'>
-        <div className='grid grid-cols md:grid-cols-12 gap-8'>
-          <div className='col-span-2 md:col-span-4'>
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-5 lg:[grid-template-columns:2fr_1fr_1fr_1fr_1fr]">
+          <div className="col-span-2 lg:col-span-1 text-center lg:text-left">
             <Link
               href='/'
-              className='flex items-center mb-6'
+              className='flex items-center justify-center lg:justify-start mb-6'
             >
               <div className='bg-prime text-light w-10 h-10 rounded-full flex items-center justify-center text-2xl mr-2'>
                 <LuAmphora />
@@ -50,7 +50,7 @@ export default function Footer() {
             <p className='text-dark text-sm mb-6'>
               We provide a wide variety of products all in one place. 
             </p>
-            <div className='flex space-x-4'>
+            <div className='flex justify-center lg:justify-start space-x-4'>
               {socialMediaIcons.map(({ icon, name }) => (
                 <Link
                   href='#'
@@ -62,7 +62,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className='col-span-1 md:col-span-2'>
+          <div className='col-span-1 text-center lg:text-left'>
             <h3 className='text-dark font-medium mb-4 text-lg'>Categories</h3>
             <ul className='space-y-2.5'>
               {categories.slice(0, 5).map((category) => (
@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className='col-span-1 md:col-span-2'>
+          <div className='col-span-1 text-center lg:text-left'>
             <h3 className='text-dark mb-4 font-medium text-lg'>Shop</h3>
             <ul className='space-y-2.5'>
               {['All Products', 'New Arrivals', 'Top Selling', 'Deals', 'Gift Cards'].map((item) => (
@@ -102,7 +102,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className='col-span-1 md:col-span-2'>
+          <div className='col-span-1 text-center lg:text-left'>
             <h3 className='text-dark mb-4 font-medium text-lg'>Support</h3>
             <ul className='space-y-2.5'>
               {['Contact Us', 'FAQs', 'Shipping', 'Returns', 'Track Order'].map((item) => (
@@ -117,7 +117,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div className='col-span-1 md:col-span-2'>
+          <div className='col-span-1 text-center lg:text-left'>
             <h3 className='text-dark mb-4 font-medium text-lg'>Company</h3>
             <ul className='space-y-2.5'>
               {['About Us', 'Blog', 'Careers', 'Press', 'Privacy Policy'].map((item) => (

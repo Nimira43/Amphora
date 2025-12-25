@@ -18,7 +18,7 @@ export default function Footer() {
   const companyName = 'Amphora'
 
   return (
-    <footer>
+   <footer> 
       <div className='bg-grey-dark py-16'>
         <div className='max-w-7xl mx-auto px-6'>
           <div className='flex flex-col md:flex-row items-center justify-between'>
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='max-w-7xl mx-auto py-16'>
+      <div className='max-w-7xl mx-auto py-16 p-5'>
         <div className='grid grid-cols md:grid-cols-12 gap-8'>
           <div className='col-span-2 md:col-span-4'>
             <Link

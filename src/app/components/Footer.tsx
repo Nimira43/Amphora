@@ -29,14 +29,17 @@ export default function Footer() {
             <div className='w-full md:w-auto'>
               <form className='flex flex-col sm:flex-row gap-2'>
                 <input type='email' placeholder='Email Address' className='px-5 py-3 rounded-md bg-light text-dark border-0 outline-0 min-w-[240px]' required />
-                <button type='submit' className='text-light bg-prime hover:bg-prime-dark uppercase px-6 py-3 rounded-md items-center justify-center'>Submit</button>
+                <button type='submit' className='text-light bg-prime hover:bg-prime-dark uppercase px-6 py-3 rounded-md  font-medium'>
+                  Submit
+                </button>
               </form>
             </div>
           </div>
         </div>
       </div>
       <div className='max-w-7xl mx-auto py-16 p-5'>
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-5 lg:[grid-template-columns:2fr_1fr_1fr_1fr_1fr]">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-5 ">
+          {/* lg:[grid-template-columns:2fr_1fr_1fr_1fr_1fr] */}
           <div className="col-span-2 lg:col-span-1 text-center lg:text-left">
             <Link
               href='/'

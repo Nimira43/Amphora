@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { HiOutlineMinusSmall, HiOutlinePlusSmall } from 'react-icons/hi2'
 
 export default function ProductPage() {
@@ -47,6 +48,17 @@ export default function ProductPage() {
                 </button>
               </div>
             </div>
+          </div>
+          <div className='flex flex-col sm:flex-row gap-4'>
+            <button className='product-btn bg-prime hover:bg-prime-dark'>
+              Add To Cart
+            </button>
+            <Link
+              href='/cart'
+              className='product-btn bg-dark hover:bg-grey-1' 
+            >
+              Go To Cart
+            </Link>
           </div>
         </div>
       </div>

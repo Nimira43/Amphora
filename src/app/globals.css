@@ -30,4 +30,8 @@ button, a,
   .centre-justify {
     @apply flex justify-center;
   }
+
+  .product-btn {
+    @apply centre flex-1 px-8 py-3 rounded-md font-medium uppercase text-light cursor-pointer transition-effect
+  }
 }

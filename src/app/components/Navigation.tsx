@@ -7,7 +7,7 @@ import { HiOutlineUser } from 'react-icons/hi2'
 
 export default function Navigation() {
   return (
-    <nav className='fixed top-0 left-0 right-0 bg-grey-dark shadow-md py-4 z-50'>
+    <nav className='fixed top-0 left-0 right-0 bg-grey-1 shadow-md py-4 z-50'>
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex justify-between items-center'>
           <Link href='/' className='flex items-center'>
@@ -51,13 +51,13 @@ export default function Navigation() {
               </button>  
             </div>
             <Link
-              href='/cart'
+              href='#'
               className='text-light bg-prime hover:bg-prime-dark flex justify-center items-center p-2 rounded-md'
             >
               <BsCart3 className='text-2xl' />
             </Link>
             <Link
-              href='/login'
+              href='#'
               className='text-light bg-prime hover:bg-prime-dark flex justify-center items-center p-2 rounded-md'
             >
               <HiOutlineUser className='text-2xl' />

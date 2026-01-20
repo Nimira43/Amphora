@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
    <footer> 
-      <div className='bg-grey-dark py-16'>
+      <div className='bg-grey-1 py-16'>
         <div className='max-w-7xl mx-auto px-6'>
           <div className='flex flex-col md:flex-row items-center justify-between'>
             <div className='mb-8 md:mb-0 md:max-w-xl'>
@@ -39,7 +39,6 @@ export default function Footer() {
       </div>
       <div className='max-w-7xl mx-auto py-16 p-5'>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-5 ">
-          {/* lg:[grid-template-columns:2fr_1fr_1fr_1fr_1fr] */}
           <div className="col-span-2 lg:col-span-1 text-center lg:text-left">
             <Link
               href='/'
@@ -58,7 +57,7 @@ export default function Footer() {
                 <Link
                   href='#'
                   key={name}
-                  className='social group flex items-center justify-center w-9 h-9 rounded-full bg-grey-light-extra hover:bg-prime text-dark hover:text-light'
+                  className='social group flex items-center justify-center w-9 h-9 rounded-full bg-grey-4 hover:bg-prime text-dark hover:text-light'
                 >
                   {icon}
                 </Link>
@@ -137,7 +136,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='border-t border-grey-medium'>
+      <div className='border-t border-grey-2'>
         <div className='max-w-7xl mx-auto p-6'>
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='text-dark text-sm mb-4 md:mb-0'>

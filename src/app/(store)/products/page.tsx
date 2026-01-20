@@ -22,7 +22,7 @@ export default function ProductsPage() {
             className='group bg-light rounded-md overflow-hidden shadow-md hover-shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-effect'
             style={{borderColor: category.colour}}
           >
-            <div className='h-48 relative overflow-hidden bg-grey-light-extra'>
+            <div className='h-48 relative overflow-hidden bg-grey-4'>
               <Image 
                 src={getCategoryImage(category.slug)}
                 alt={category.name}
@@ -39,7 +39,7 @@ export default function ProductsPage() {
               >
                 {category.name}
               </h3>
-              <p className='text-sm text-grey-dark'>{category.description}</p>
+              <p className='text-sm text-grey-1'>{category.description}</p>
               <div 
                 className='flex justify-end items-center mt-5 text-sm font-medium transition-effect uppercase' 
                 style={{color: category.colour}}
@@ -53,7 +53,7 @@ export default function ProductsPage() {
           </Link>
         ))}
       </div>
-      <div className='mt-12 pt-6 border-t border-grey-light-extra'>
+      <div className='mt-12 pt-6 border-t border-grey-4'>
         <Link
           href='/'
           className='inline-flex items-center text-dark hover:text-prime transition-effect'

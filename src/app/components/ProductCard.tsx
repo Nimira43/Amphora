@@ -16,7 +16,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <div className='bg-light rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-effect group'>
-      <div className='h-64 relative bg-grey-light-extra p-6 flex items-center justify-center'>
+      <div className='h-64 relative bg-grey-4 p-6 flex items-center justify-center'>
         <Image 
           src={product.image}
           alt={product.name}
@@ -25,11 +25,11 @@ export default function ProductCard({
           className='max-h-full object-contain h-full w-auto group-hover:scale-105 transition-transform duration-500'
         />
       </div>
-      <div className='p-6 border-t border-grey-light'>
+      <div className='p-6 border-t border-grey-3'>
         <h2 className='text-lg font-medium text-dark mb-2 line-clamp-1'>
           {product.name}
         </h2>
-        <p className='text-sm text-grey-dark mb-4 line-clamp-2'>
+        <p className='text-sm text-grey-1 mb-4 line-clamp-2'>
           {product.description}
         </p>
         <div className='flex items-center justify-between'>

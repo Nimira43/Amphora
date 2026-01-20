@@ -1,16 +1,60 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { HiOutlineMinusSmall, HiOutlinePlusSmall } from 'react-icons/hi2'
+import { productsList, Product} from '@/app/data/products'
+import { useState, useEffect } from 'react'
 
-export default function ProductPage() {
+export default function ProductPage({
+  params
+}: {
+  params: Promise<{
+    category: string,
+    productId: string  
+  }>
+}) {
+  const [product, setProduct] = useState<Product | null>(null)
+
+  useEffect(() => {
+    const fetchParams = async () => {
+      const resolvedParams = await params
+      const foundProduct = productsList.find((p) => p.id === resolvedParams.productId)
+
+      if (
+        !foundProduct ||
+        foundProduct.category
+          .toLowerCase() !==
+        resolvedParams.category
+          .toLowerCase()
+      ) {
+        return
+      }
+      setProduct(foundProduct)
+    }
+    fetchParams()
+  }, [params])
+
+  if (!product) {
+    return (
+      <div className='max-w-7xl mx-auto px-4 py-12 flex items-center justify-center min-h-[60vh]'>
+        <div className='flex flex-col items-center animate-pulse'>
+          <div className='rounded-full bg-grey-2 size-12 mb-4'></div>
+          <div className='h-4 rounded bg-grey-2 w-24 mb-6'></div>
+          <div className='h-2 rounded bg-grey-2 w-16'></div>
+        </div>
+      </div>
+    )
+  }
+  
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
       <div className='flex flex-col md:flex-row bg-light rounded-2xl overflow-hidden shadow-lg'>
         <div className='md:w-1/2 bg-grey-4 p-8 centre relative'>
           <div className='relative w-full h-[300px] md:h-[400px]'>
             <Image  
-              src='/images/product001.png'
-              alt='Product Image'
+              src={product?.image || '/images/placeholder.png'}
+              alt={product?.name || 'Product Image'}
               fill
               priority
               sizes='(max-width: 768px) 100vw, 50vw'
@@ -21,11 +65,13 @@ export default function ProductPage() {
         <div className='md:w-1/2 p-8 md:p-12 space-y-6'>
           <div>
             <h1 className='text-3xl font-medium text-dark mb-2'>
-              Product Title
+              {product.name}
             </h1>
-            <p className='text-xl mb-4 text-prime'>£999</p>
+            <p className='text-xl mb-4 text-prime'>
+              £{product.price.toLocaleString()}
+            </p>
             <p className='text-grey-1'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos et reprehenderit placeat.
+              {product.description}
             </p>
           </div>
           <div className='pt-6 border-t border-grey-2'>

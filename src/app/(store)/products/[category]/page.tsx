@@ -17,7 +17,7 @@ export default async function CategoryPage({
   
   return (
     <div className='max-w-7xl mx-auto px-4 py-12'>
-      <div className='bg-grey-dark rounded-2xl p-8 mb-12 text-light relative overflow-hidden'>
+      <div className='bg-grey-1 rounded-2xl p-8 mb-12 text-light relative overflow-hidden'>
         <div className='relative z-10'>
           <h1 className='text-4xl font-medium mb-3'>{categoryName}</h1>
           <p className='text-lg text-light font-light max-w-2xl'>Explore our selection of top of the range {categoryName}.</p>
@@ -33,7 +33,7 @@ export default async function CategoryPage({
           />
         ))}
       </div>
-      <div className='mt-12 pt-6 border-t border-grey-light-extra'>
+      <div className='mt-12 pt-6 border-t border-grey-4'>
         <Link
           href='/products'
           className='inline-flex items-center text-dark hover:text-prime transition-effect'
